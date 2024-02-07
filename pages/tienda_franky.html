@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+
+        <meta charset="iso-8559-1"/>
+        <meta name ="description" content="Venta de figuras de anime"/>
+        <meta name="keywords" content="Funkos, anime, Drgon ball, naruto, figuras"/>
+
+        <title>La Tienda de Franky</title>
+
+        <link rel="stylesheet" href="../estilos/estilos_tienda_fr.css"/>
+        
+    </head>
+
+    <body>
+        
+        <div class="menu-toggle" onclick="toggleMenu()" style="color:rgb(255, 255, 255); font-size: 250%;">&#9776;</div>
+        <div class="menu-container">
+            <ul class="menu">
+                <li class="menu-item" id="Catálogo"><h1>Catálogo</h1></li>
+                <li class="menu-item" id="DB">Dragon ball</li>
+                <li class="menu-item" id="Naruto">Naruto</li>
+                <li class="menu-item" id="Onepiece">One piece</li>
+                <li class="menu-item">Attack on Titan</li>
+                <li class="menu-item">Death Note</li>
+                <li class="menu-item">Fullmetal Alchemist</li>
+                <li class="menu-item">My Hero Academia</li>
+                <li class="menu-item">Hunter x Hunter</li>
+                <li class="menu-item">Tokyo Ghoul</li>
+                <li class="menu-item">Baki</li>
+                <li class="menu-item">Demon Slayer</li>
+
+            </ul>
+        </div>
+
+        <header>
+            <img src="../images/imagesAnimeShop/ae369a7d819fbb9396b24d32d5991a28.jpg" id="fotoheader">	
+            <span id="titulo">Anime Shop</span>
+            
+        </header>
+        <Nav id="contenedor_nav" >
+            <ul>
+                
+                <li>Inicio</li>
+                <li>Novedades</li>
+                <li>Descuentos</li>
+                <li>Packs</li>
+            </ul>
+        </Nav>
+        <section>
+
+            <div class="tarjeta" data-imagen="../images/imagesAnimeShop/goku1.jpg"></div>
+
+            <div class="tarjeta" data-imagen="../images/imagesAnimeShop/naruto1.jpg"></div>
+
+            <div class="tarjeta" data-imagen="../images/imagesAnimeShop/kaneki1.jpg"></div>
+
+
+        </section>
+
+        <!--<footer>
+            Contactanos: 656555 
+            Instagram: 
+            Envíos: 
+            email: 
+        </footer>-->
+       
+        <script>
+            function toggleMenu() {
+                document.body.classList.toggle('menu-open');
+            }
+    
+            // Evitar que se cierre el menú si se hace clic dentro del menú
+            const menuContainer = document.querySelector('.menu-container');
+            document.addEventListener('click', function (event) {
+                if (document.body.classList.contains('menu-open') && event.target !== menuContainer && event.target !== document.querySelector('.menu-toggle')) {
+                    document.body.classList.remove('menu-open');
+                }
+            });
+        </script>
+
+       
+
+    </body>
+
+</html>
