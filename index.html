@@ -12,7 +12,7 @@
 
     <ul type="none">
         <li>PROYECTOS</li>
-        <li><a href="pages/web_sides.html">WEB SITES</a></li>
+        <li><a href="pages/web_sites.html">WEB SITES</a></li>
         <li>PROGRAMAS</li>
         <li>FORMACIÓN</li>
     </ul>
