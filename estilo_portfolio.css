@@ -8,6 +8,14 @@
     src: url("fonts/RobotoSlab-Regular.ttf")
 }
 
+@media screen and (max-width: 600px) {
+    header img {
+      width: 100px;
+    }
+    h1 {
+      font-size: 1.5em;
+    }
+  }
 
 #fuentetitulo{
     font-family: 'fuenteprincipal';
