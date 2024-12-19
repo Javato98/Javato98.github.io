@@ -1,86 +1,126 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Javi</title>
-    <link rel="stylesheet" href="estilo_portfolio.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/animate_border.css">
+    <link rel="stylesheet" href="styles/estilos_estructura.css">
+    <link rel="stylesheet" href="styles/animate-container.css">
+
+</head>
 <body>
-
+    
     <header>
-
-        <img src="images/Foto Javi.jpg" alt="Foto Javi">
-        <h1 id="fuentetitulo">Hola, soy Javi</h1>
-
+        <div>
+            <div id="indice">
+                <a href="#indice"><p>Inicio</p></a>
+                <a href="#contact"><p>Contacto</p></a>
+                <a href="#proyects"><p>Proyectos</p></a>
+        </div>
     </header>
-    <p>Me llamo Javier Fernández Quiñonero. <br>Desarrollador de software tanto en frontend como en backend. <br>Apasionado de la tecnología y con muchas ganas de aportar <br>mis conocimientos al mundo laboral para seguir <br>desarrollándome como programador.</p>
-    
-    <h2>Contacto</h2>
-    <ul>
-        <li>
-            <a href="mailto:javiviii982gmail.com">
-            <img src="iconos/contacto/correo-electronico.png" alt="correo" style="width: 45px; height: 35px; padding-bottom: 1px;"></a><p>Correo</p>
-        </li>
+    <div class="block glow"></div>
 
-        <li>
-            <a href="Documentos/CV Dev(2).pdf">
-            <img src="iconos/contacto/curriculum.png" alt="CV" style="width: 45px;"></a><p>CV</p>
-        </li>
+    <div id="presentacion">
+        <div id="texto-presentacion">
+            <div>Hello, I'm Javi</div>
+            <div id="software-dev">Software Developer</div>
+            <div>Turning ideas into code.</div>
+            <div id="botones">
+                <button id="boton-cv">CV <img src="resources/icons/contacto/curriculum-color.png" alt="icono Currículum"></button>
+                <!-- Darle una vuelta a lo del Linkedin -->
+                <button>LinkedIn <img src="resources/icons/contacto/logotipo-de-linkedin-color.png" alt="icono LinkedIn"></button>
+            </div>
 
-        <li><a href="https://www.linkedin.com/in/javier-fern%C3%A1ndez-qui%C3%B1onero-365739243/">
-            <img src="iconos/contacto/logotipo-de-linkedin.png" alt="linkedin"></a><p>Linkedin</p>
-        </li>
-
-        <li>
-            <a href="https://github.com/Javato98">
-            <img src="iconos/contacto/signo-de-github.png" alt="Github"></a><p>Github</p>
-        </li>
-
-    </ul>
-    <h2>Tecnologías</h2>
-    <ul>
-        <li><img src="iconos/tecnologias/python.png" alt="python" ></li>
-        <li><img src="iconos/tecnologias/html.png" alt="html" style="width: 45px;"></li>
-        <li><img src="iconos/tecnologias/css-3.png" alt="css"></li>
-        <li><img src="iconos/tecnologias/javascript.png" alt="javascript"></li>
-        <li><img src="iconos/tecnologias/mysql.png" alt="mysql" ></li>
-    </ul>
-    
-    <h2 style="margin-top: 150px;">Proyectos</h2>
-
-    <div class="Proyectos">
-
-
-        
-        <div>
-            <h3>Alien Invasion</h3>
-            <a href="https://github.com/Javato98/Alien-Invasion">
-            <img src="images/alien_invasion.png" alt="Casino">
-            </a>
         </div>
-
-
-
-        <div>
-            <h3>Metal Soldier</h3>
-            <a href="https://github.com/Javato98/Metal_Soldier">
-            <img src="images/metal_soldier.png" alt="Metal Soldier">
-            </a>
-        </div>
-
-
-        <div>
-            <h3>Parque Jurasico</h3>
-            <a href="https://github.com/Javato98/Gestor-Parque-Jurasico/tree/main/Proyecto%20Jurassic%20Park">
-            <img src="images/Jurassic_Park(2).jpg" alt="Parque Jurasico">
-            </a>
-            
-        </div>
-
-
-
+        <img src="resources/images/Foto Javi.jpg" alt="Foto presentación" id="mi-foto">
     </div>
 
+    <div class="block-container glow-container about-me">
+        <div class="about-me-content">
+            <div>
+                <h3>About me</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex voluptate, cupiditate corporis quae eos asperiores. Ut eius autem, doloribus, hic dignissimos deleniti, eligendi a dolore voluptatem iure eveniet porro enim!</p>
+            </div>
+
+            <div>
+                <h3>Tech Stack</h3>
+                <div id="tech-stack">
+                    <img src="resources/icons/tecnologias/html.png" alt="">
+                    <img src="resources/icons/tecnologias/css-3.png" alt="">
+                    <img src="resources/icons/tecnologias/javascript.png" alt="">
+                    <img src="resources/icons/tecnologias/python.png" alt="">
+                    <img src="resources/icons/tecnologias/php.png" alt="">
+                    <img src="resources/icons/tecnologias/mysql.png" alt="">
+                    <img src="resources/icons/tecnologias/git.png" alt="">
+                    <img src="resources/icons/tecnologias/github.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="block-container glow-container about-me" id="proyects">
+        <div class="about-me-content">
+
+            <h3>Proyects</h3>
+
+            <div class="proyect">
+                <img src="resources/images/alien_invasion2-edit.png" alt="">
+                <video autoplay loop muted class="video">
+                    <source src="resources/videos/Alien Invasio.mp4" type="video/mp4" loop>
+                </video>
+                <h5>Alien Invasion</h5>
+            </div>
+
+            <div class="proyect">
+                <img src="resources/images/metal_soldier.png" alt="">
+                <video autoplay loop muted class="video">
+                    <source src="resources/videos/Metal Soldier-edit.mp4" type="video/mp4" loop>
+                </video>
+                <h5>Metal Soldier</h5>
+            </div>
+
+            <div class="proyect">
+                
+                <img src="resources/images/harry_potter.png" alt="">
+                <div id="harry">
+                    <video autoplay loop muted class="video">
+                        <source src="resources/videos/the_restricted_section_trim.mp4" loop>
+                    </video>
+                </div>
+                <h5>The Restricted Section</h5>
+            </div>
+
+            <div class="proyect">
+                <img src="resources/images/chess.png" alt="">
+                <video autoplay loop muted class="video">
+                    <source src="resources/videos/chess.mp4" type="video/mp4" loop>
+                </video>
+                <h5>Chess</h5>
+            </div>
+        </div>
+    </div>
+
+    <div class=" block-container glow-container about-me" id="contact-container">
+        <div class="about-me-content">
+            <h3>Contact me</h3>
+            <div id="contact">
+                <a href="mailto:javierfernandezquinonero@gmail.com"><img src="resources/icons/contacto/correo-electronico-color.png" alt=""></a>
+
+                <a href="https://www.linkedin.com/in/javier-fern%C3%A1ndez-qui%C3%B1onero-365739243/"><img src="resources/icons/contacto/logotipo-de-linkedin-color.png" alt=""></a>
+
+                <a href="https://github.com/Javato98"><img src="resources/icons/contacto/github-color.png" alt=""></a>
+
+                <a href="resources/Javier_Fernández_Quiñonero_CV.pdf"><img src="resources/icons/contacto/curriculum-color.png" alt=""></a>
+            </div>
+        </div>
+
+    </div>
+    
+
+
+
+    
 
 
 </body>

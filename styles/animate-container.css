@@ -1,0 +1,42 @@
+.block-container{
+    background-color: rgba(1,43,39);
+    width: 800px;
+    height: fit-content;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0px 0px 20px #111;
+    color: white;
+}
+
+.glow-container::before, .glow-container::after {
+    content: "";
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    background: linear-gradient(135deg, #00c3b0ad, #04BFAD, #09efd8, #00ffe5, rgba(0, 255, 255, 0.687), #23ffab, #04bf7e, #02a57c);
+    z-index: -1;
+    position: absolute;
+    background-size: 400%;
+    animation: animate 20s linear infinite;
+
+}
+
+
+@keyframes animate{
+    0%{
+        background-position: 0 0;
+    }
+    
+    50%{
+        background-position: 400% 0;
+    }
+    
+    100%{
+        background-position: 0 0;
+    }
+}
+
+.glow-container::after{
+    filter: blur(8px);
+}
