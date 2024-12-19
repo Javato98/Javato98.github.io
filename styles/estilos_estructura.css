@@ -13,7 +13,9 @@ body, html {
     align-items: center;
 }
 
-
+a{
+    all: unset;
+}
 
 h3{
     font-size: 1.5em;
@@ -48,10 +50,6 @@ header div{
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-
-#indice a{
-    all: unset;
 }
 
 
