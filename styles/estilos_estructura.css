@@ -191,21 +191,7 @@ header div{
     text-align: center;
 }
 
-#harry{
-    border-radius: 10px;
-    background-color: #00001b;
-    width: auto;
-    height: 467px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-#harry:hover{
-    background-color: #00001b;
-    transition: opacity 0.4s ease;
-}
 
 #contact{
     display: flex;
