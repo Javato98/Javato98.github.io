@@ -3,10 +3,11 @@
     src: url(../resources/open-sans.woff2);
 }
 
+
 body, html {
-    width: 100vw;
     margin: 0;
     padding: 0;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -41,11 +42,6 @@ header div{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#logo{
-    width: 30px;
-    padding-right: 200px;
 }
 
 #indice{
@@ -226,4 +222,112 @@ header div{
 
 #contact-container{
     margin-bottom: 300px;
+}
+
+@media (max-width: 830px){
+    header div{
+        width: 700px;
+    }
+
+    #presentacion {
+        width: 700px;
+    }
+}
+
+
+/* Para pantallas medianas, como tablets en modo vertical */
+@media (max-width: 768px) {
+    #presentacion {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 100px;
+    }
+
+    #texto-presentacion {
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    #mi-foto {
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .about-me-content {
+        width: 90%;
+    }
+
+    #tech-stack img {
+        width: 40px;
+    }
+
+
+    .proyect img, .video {
+        width: 400px;
+    }
+}
+
+/* Para pantallas pequeñas, como teléfonos móviles */
+@media (max-width: 480px) {
+    header div {
+        width: 330px;
+    }
+
+    header {
+        font-size: 1.2em;
+    }
+
+    #indice a p {
+        font-size: 0.9em;
+    }
+
+    #presentacion {
+        margin-top: 80px;
+        width: 330px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #texto-presentacion {
+        font-size: 1em;
+    }
+
+    #botones button {
+        font-size: 0.7em;
+        padding: 5px;
+    }
+
+    #mi-foto {
+        width: 100px;
+        margin-top: 15px;
+    }
+
+    .about-me{
+        margin-top: 100px;
+    }
+
+    .about-me-content {
+        gap: 20px;
+    }
+
+    #tech-stack img {
+        width: 30px;
+    }
+
+    .proyect {
+        margin-top: 50px;
+    }
+
+    .proyect img, .video {
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    #contact img {
+        height: 40px;
+    }
+
+    #contact-container {
+        margin-bottom: 100px;
+    }
 }

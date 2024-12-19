@@ -40,3 +40,24 @@
 .glow-container::after{
     filter: blur(8px);
 }
+
+@media (max-width: 830px){
+    .block-container{
+        width: 700px;
+    }
+}
+
+@media (max-width: 768px){
+    .block-container{
+        width: 600px;
+    }
+}
+
+
+
+/* Para pantallas pequeñas, como teléfonos móviles */
+@media (max-width: 480px) {
+    .block-container{
+        width: 330px;
+    }
+}
