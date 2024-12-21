@@ -15,6 +15,7 @@ body, html {
 
 a{
     all: unset;
+    cursor: pointer;
 }
 
 h3{
@@ -305,6 +306,14 @@ header div{
     .proyect img, .video {
         width: 300px;
         border-radius: 5px;
+    }
+
+    .proyect img{
+        opacity: 0;
+    }
+
+    .proyect video{
+        opacity: 1;
     }
 
     #contact img {
