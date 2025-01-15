@@ -38,6 +38,8 @@ header{
     font-size: 1.5em;
     background-color: #01211e;
     width: 100vw;
+    position: fixed;
+    z-index: 10;
 }
 
 header div{
@@ -45,6 +47,12 @@ header div{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#borde-header{
+    position: absolute;
+    z-index: 11;
+    bottom: 0px;
 }
 
 #indice{
